@@ -1,14 +1,18 @@
-import ComboBox from './components/Comboxbox';
-import SearchBar from './components/SearchBar';
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Main } from './components/pages/Main';
 
 function App() {
   return (
-    <div className="App">
-      <div className='main-page d-flex justify-content-center align-items-center flex-column'>
-        <SearchBar />
-        <ComboBox />
+    <BrowserRouter>
+      <div className="App">
+        <Switch>
+          <Route exact path="/">
+            <Main />
+          </Route>
+        </Switch>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 

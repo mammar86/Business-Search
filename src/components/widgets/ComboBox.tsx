@@ -3,7 +3,7 @@ import Autocomplete from '@material-ui/lab/Autocomplete';
 
 const options = []
 
-function ComboBox() {
+export function ComboBox() {
     return (
       <Autocomplete
         id="options"
@@ -15,4 +15,3 @@ function ComboBox() {
     );
   }
 
-  export default ComboBox;

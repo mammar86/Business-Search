@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import TextField from '@material-ui/core/TextField';
 
-function SearchBar() {
+export function SearchBar() {
   return (
       <div className='search-bar m-3'>
         <TextField label="City"/>
@@ -9,7 +9,3 @@ function SearchBar() {
   );
 }
 
-export default SearchBar;
-
-// const SearchBarWrapper = styled.div`
-// `
